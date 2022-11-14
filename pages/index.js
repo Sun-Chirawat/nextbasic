@@ -1,25 +1,33 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
-import buttonStyle from '../styles/button.module.css';
+import Button from "../styles/button.module.css"
 import Layout from "./components/layout";
+
 
 export default function Home() {
   const router = useRouter();
 
   return (
     <div>
-      {/* <Layout>       */}
-      <h1>Hello Next</h1>
-      <button className={buttonStyle.success} onClick={() => router.push('/about')}>Go to About</button>
-      <button onClick={() => router.replace('/login')}>Go to Login</button>
-      <button 
-      onClick={() => router.push({
-          pathname: '/login/logout',
-          query: {"name": "mfu"}
-        })}>Logout
-        </button>
-        {/* </Layout> */}
+      {/* <Layout>*/}
+      <h1>PICK ME UP!</h1>
+
+
+      <form action="">
+        <input type="text" placeholder="From:" />
+        <input type="text" placeholder="To:" />
+        <input type="text" placeholder="Date:" />
+        <input type="text" placeholder="Time:" />
+      </form>
+
+
+      <button className={ Button.buttonlogout } onClick={() => router.push({
+        pathname: '/login/logout',
+        query: { "name": "mfu" }
+      })}>Logout
+      </button>
+      {/* </Layout> */}
     </div>
-    
+
   )
 }

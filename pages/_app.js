@@ -1,4 +1,4 @@
-// import '../styles/globals.css'
+import '../styles/globals.css'
 // import Navbar from "./components/navbar"
 import Layout from "./components/layout"
 
