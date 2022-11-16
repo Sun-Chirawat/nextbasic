@@ -24,7 +24,7 @@ export default function Home() {
       <button className={ Button.buttonlogout } onClick={() => router.push({
         pathname: '/login/logout',
         query: { "name": "mfu" }
-      })}>Logout
+      })}>ค้นหา
       </button>
       {/* </Layout> */}
     </div>

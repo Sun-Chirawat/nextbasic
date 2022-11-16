@@ -10,8 +10,8 @@ a {
   text-decoration: none;
 }
 .content {  
-  padding-bottom: 0px;
-  
+  padding-bottom: 100px;
+  padding-top: 50px;  
   margin: 0 auto;
   text-align: center;
   
@@ -19,15 +19,27 @@ a {
 nav {
   background: #702121;  
   border: 0ch;  
-  margin: 10px auto 100px;
+  margin: 50px auto 100px;
   padding: 10px 0;
   display: flex;
-  justify-content:flex-start;  
-  align-items: flex-end;
-  
+  justify-content:center;    
 }
+
+li {
+  list-style: none;
+}
+
+nav li {
+  float: left;
+  padding: 0 10px;
+  font-size: 14px;
+  border-right: 1px #909090 solid;
+}
+
 nav a {
-  margin-left: 12px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: larger;
 }
 nav .logo {
   margin-right: auto;
